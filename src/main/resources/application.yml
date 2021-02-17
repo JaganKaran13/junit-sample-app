@@ -1,0 +1,15 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: junit
+eureka:
+  client:
+    fetchRegistry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka
+  vipAddress: junit
+spring-testing:
+  ribbon:
+    listOfServers: http://spring-testing/
